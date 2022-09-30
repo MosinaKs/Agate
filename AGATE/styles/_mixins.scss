@@ -1,0 +1,93 @@
+@mixin button($color) {
+    color: $color;
+    display: block;
+    margin: 0 auto;
+    width: 312px;
+    height: 60px;
+    line-height: 60px;
+    font-size: $text-font;
+    font-weight: 600;
+    border: 1px solid;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color .5s;
+}
+
+@mixin text($text-width) {
+    font-weight: 300;
+    font-size: 1.9rem;
+    line-height: 41px;
+    margin: 0 auto;
+    max-width: $text-width;
+}
+
+@mixin small-text($text-width) {
+    font-weight: $text-width;
+    font-size: 1.13rem;
+    line-height: 23px;
+}
+
+@mixin desc ($desc-weight) {
+    font-weight: $desc-weight;
+    font-size: 1.6rem;
+    line-height: 31px;
+}
+
+@mixin subject {
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 50px;
+}
+
+@mixin sticker($content, $bg-sticker) {
+    position: absolute;
+    border-radius: 50%;
+    background-color: $bg-sticker;
+    color: $text-color;
+    line-height: 58px;
+    text-align: center;
+    width: 58px;
+    height: 58px;
+    top: -29px;
+    left: -29px;
+    font-size: .88rem;
+    font-weight: 600;
+    content: $content;
+}
+
+@mixin sticker1250 {
+    font-size: 0.75rem;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    top: -20px;
+    left: -20px;
+}
+
+@mixin sticker1024 {
+    font-size: 0.75rem;
+    width: 46px;
+    height: 46px;
+    line-height: 46px;
+    top: -23px;
+    left: -23px;
+}
+
+@mixin sticker768 {
+    font-size: 0.875rem;
+    width: 56px;
+    height: 56px;
+    line-height: 56px;
+    top: -28px;
+    left: -28px;
+}
+
+@mixin flex-icon($bg-color) {
+    border-radius: 50%;
+    background-color: $bg-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: .5s;
+}

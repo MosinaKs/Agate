@@ -1,0 +1,52 @@
+.link {
+    display: flex;
+    align-items: center;
+    &__item {
+        color: $text-color;
+        text-decoration: none;
+        font-size: 1.4rem;
+        line-height: 27px;
+        &:not(:last-child) {
+            margin-right: 25px;
+        }
+        &:not(:last-child)::after {
+            display: inline-block;
+            content: "";
+            width: 1.5px;
+            height: 16px;
+            background-color: white;
+            margin-left: 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .link {
+        &__item {
+            font-size: 1.13rem;
+            &:not(:last-child)::after {
+                height: 13px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    .link {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .link {
+        &__item {
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+            &:not(:last-child)::after {
+                margin-left: 10px;
+                width: 1px;
+            }
+        }
+    }
+}

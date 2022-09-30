@@ -1,0 +1,32 @@
+.adv {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1900px;
+    margin: 0 auto;
+    padding: 100px 24px 0;
+}
+
+@media screen and (max-width: 1440px) {
+    .adv {
+        padding: 100px 12px 0px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .adv {
+        padding: 80px 15px 0px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .adv {
+        padding: 70px 24px 0px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .adv {
+        padding: 60px 15px 0;
+    }
+}

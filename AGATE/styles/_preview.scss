@@ -1,0 +1,94 @@
+.preview {
+    padding: 240px 0 185px;
+    background-color: rgba(0, 0, 0, 0.48);
+    color: $text-color;
+    &__title {
+        font-size: 5.3rem;
+        line-height: 103px;
+        letter-spacing: 0.07em;
+        width: 100%;
+        max-width: 950px;
+        margin: 0 auto;
+        margin-bottom: 35px;
+    }
+    &__text {
+        @include desc(400);
+        margin-bottom: 77px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .preview {
+        padding-top: 218px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .preview {
+        padding: 183px 0 153px;
+        &__title {
+            font-size: 3.75rem;
+            line-height: 73px;
+            max-width: 697px;
+        }
+        &__text {
+            font-size: 1.125rem;
+            margin-bottom: 63px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .preview {
+        padding: 171px 0 99px;
+        &__title {
+            font-size: 3.125rem;
+            line-height: 58px;
+            max-width: 329px;
+        }
+        &__text {
+            margin-bottom: 66px;
+        }
+    }
+}
+
+@media screen and (max-width: 678px) {
+    .preview {
+        padding: 150px 200px 99px;
+        &__title {
+            font-size: 2.8rem;
+        }
+    }
+}
+
+@media screen and (max-width: 577px) {
+    .preview {
+        padding: 130px 180px 79px;
+        &__title {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .preview {
+        padding: 100px 130px 49px;
+        &__text {
+            margin-bottom: 45px;
+        }
+    }
+}
+
+@media screen and (max-width: 495px) {
+    .preview {
+        padding: 20px 0;
+        &__title {
+            font-size: 1.7rem;
+            line-height: 36px;
+            max-width: 330px;
+        }
+        &__text {
+            margin-bottom: 45px;
+        }
+    }
+}

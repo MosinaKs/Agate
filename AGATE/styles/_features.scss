@@ -1,0 +1,23 @@
+.features {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+@media screen and (max-width: 1024px) {
+    .features {
+        margin-bottom: 45px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .features {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 678px) {
+    .features {
+        align-items: center;
+    }
+}

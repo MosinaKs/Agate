@@ -1,0 +1,33 @@
+    .list {
+        &__item a {
+            font-weight: 300;
+            font-size: 2.19rem;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+    }
+    
+    @media screen and (max-width: 1024px) {
+        .list {
+            &__item a {
+                font-size: $small-font;
+            }
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        .list {
+            &__item a {
+                font-size: 1.375rem;
+            }
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        .list {
+            &__item a {
+                font-size: 1.2rem;
+                padding-bottom: 10px;
+            }
+        }
+    }
